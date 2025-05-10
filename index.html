@@ -2,275 +2,274 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Child Trust - About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nurtured Neurons Trust - Fundraising for Child's Surgery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #d0f0c0, #a8e6cf, #f5f9ff);
+      margin: 0;
     }
-
     header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 48px;
-      color: white;
-    }
-
-    section {
-      padding: 20px;
-      margin: 20px;
-      background-color: white;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      color: #4CAF50;
-      margin-bottom: 10px;
-      font-size: 48px;
-    }
-    h1{
-      color:#4CAF50
-     }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 20px;
-      font-size: 24px;
-    }
-
-    img {
-      max-width: 100vw;
-      height: 100vh;
-      margin: 10px 0;
-      border-radius: 8px;
-      object-fit: cover;
-    }
-
-    .btn {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1.2em;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .btn:hover {
-      background-color: #45a049;
-    }
-
-    .core-values, .focus-areas {
+      background-color: #2c6d6d;
+      padding: 10px 30px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
+   
+      header img {
+  height: 50px;
+  background-color: #ffffff; /* White background behind logo */
+  padding: 5px;              /* Add some space around the image */
+  border-radius: 8px;        /* Slightly rounded corners */
+}
 
-    .core-value, .focus-area {
-      background-color: #e7f5e7;
-      padding: 20px;
+    header h2 {
+      margin-left: 10px;
+      color: #ff7f50;
+      background-color: #d0f0c0;
+      padding: 5px 15px;
       border-radius: 8px;
-      flex: 1 1 45%;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 1.2em;
     }
-
-    footer {
-      text-align: center;
-      background-color: #333;
-      color: white;
-      padding: 10px;
-    }
-
-    .link {
-      color: #4CAF50;
-      text-decoration: none;
-    }
-
-    .link:hover {
+    nav a {
+      margin: 0 15px;
       text-decoration: underline;
+      color: #ffffff;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #ff7f50;
+    }
+    .donate-button {
+      background: linear-gradient(45deg, #3a9e7b, #2c6d6d);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .donate-button:hover {
+      background: linear-gradient(45deg, #2c6d6d, #3a9e7b);
+    }
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(rgba(44,109,109,0.7), rgba(44,109,109,0.7)),
+      url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80') center/cover no-repeat;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .slider-container {
+      width: 90%;
+      overflow: hidden;
+      position: relative;
+      max-width: 800px;
+      margin: 20px auto;
     }
     .slides {
       display: flex;
-      width: 300%;
-      animation: slide 9s infinite;
+      transition: transform 0.5s ease-in-out;
     }
-
-    .slides img {
+    .slide {
+      min-width: 100%;
+      height: 400px;
+    }
+    .slide img {
       width: 100%;
-      height: 250px;
+      height: 100%;
       object-fit: cover;
+      border-radius: 15px;
     }
-
-    @keyframes slide {
-      0% { transform: translateX(0); }
-      33% { transform: translateX(-100%); }
-      66% { transform: translateX(-200%); }
-      100% { transform: translateX(0); }
+    .arrow-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
     }
-
+    .arrow-left { left: 10px; }
+    .arrow-right { right: 10px; }
+    main { padding: 20px; }
+    section {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      max-width: 900px;
+      padding: 20px;
+    }
+    .progress-bar {
+      background: #ddd;
+      border-radius: 20px;
+      width: 100%;
+      height: 25px;
+      overflow: hidden;
+    }
+    .progress {
+      background: #3cb371;
+      width: 60%;
+      height: 100%;
+      text-align: center;
+      color: white;
+      line-height: 25px;
+    }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #3cb371;
+      margin: 10px 0;
+      padding-left: 10px;
+    }
+    ul { list-style: none; padding: 0; }
+    ul li::before {
+      content: "✔ ";
+      color: green;
+    }
+    .card img.profile {
+      width: 150px;
+      border-radius: 50%;
+      margin-top: -60px;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .qr-section img { width: 150px; }
+    .social a {
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+      color: #3cb371;
+      font-weight: bold;
+    }
+    .sticky-donate {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff6347;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1><b>NUTURED NEURONS CHILD TRUST</b></h1>
-    <p><b>Empowering Children, Enriching Lives</b></p>
-  </header>
+<header>
+  <div style="display: flex; align-items: center;">
+    <img src="https://static.wixstatic.com/media/bf869b_53596bff89504261ab5cad95b65a505c~mv2.png/v1/fit/w_2500,h_1330,al_c/bf869b_53596bff89504261ab5cad95b65a505c~mv2.png" alt="Logo">
+    <h2>NURTURED NEURONS TRUST</h2>
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="https://muthalagammai-123.github.io/nutured-neurons/">About Us</a>
+    <a href="https://pooja-13-06.github.io/demoproject/">Schemes</a>
+    <a href="https://nivetha2007-nive.github.io/programming/">Get Involved</a>
+    <a href="https://nisha-k-s.github.io/Nurtured-Neurons/">Contact Info</a>
+    <button class="donate-button">Donate Now</button>
+  </nav>
+</header>
 
-  <section>
-    <h2><b>Welcome to Nurtured Neurons Child Trust</b></h2>
-<div class="slides">
-      <img src="https://img.freepik.com/free-photo/kids-exploring-together-nature_23-2149002867.jpg?semt=ais_hybrid&w=740" alt="child 1"/>
-      <img src="https://b2226884.smushcdn.com/2226884/wp-content/uploads/2021/09/childrens-trust.jpg?lossy=2&strip=1&webp=1" alt="Child 2" />
-      <img src="https://t3.ftcdn.net/jpg/00/66/63/94/360_F_66639480_x4DeKpv0laS8mQ9zOoTt1oaW0FO8qlGd.jpg" alt="Child 3" />
-    </div>
+<section class="hero">
+  <h1>Help a Child, Save a Life 💖</h1>
+</section>
 
-   <p><b>
-Nurtured Neurons Child Trust is dedicated to fostering the cognitive and emotional development of children through innovative programs and supportive environments. This document outlines the mission, vision, and core values of the Trust, emphasizing our commitment to nurturing young minds and providing them with the tools they need to thrive. By focusing on holistic development, we aim to create a foundation for lifelong learning and well-being in every child we serve.world...</b></p>
+<section class="slider-container">
+  <div class="slides">
+    <div class="slide"><img src="https://www.sliderrevolution.com/wp-content/uploads/2021/05/Trust.jpg" alt="Slide 1"></div>
+    <div class="slide"><img src="https://cdn.cssauthor.com/wp-content/uploads/2022/04/Welfare.jpg?strip=all&lossy=1&ssl=1" alt="Slide 2"></div>
+    <div class="slide"><img src="https://www.greenhouseschoolwebsites.co.uk/blog/wp-content/uploads/2019/07/schoolsworks-trust.jpg" alt="Slide 3"></div>
+    <div class="slide"><img src="https://media.licdn.com/dms/image/v2/D5622AQFh8LDqbGpETQ/feedshare-shrink_800/B56ZW8CXGUGsAg-/0/1742616491847?e=2147483647&v=beta&t=R-Rz1dj0MolEHeXpa1Ruq-ytcafVv0fzbDL4QwY0-dc" alt="Slide 4"></div>
+  </div>
+  <button class="arrow-button arrow-left" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="arrow-button arrow-right" onclick="moveSlide(1)">&#10095;</button>
+</section>
 
-<p><b>At Nurtured Neurons, we believe that every child has the potential to excel when provided with the right support and resources. Our approach integrates evidence-based practices in early childhood education, mental health, and family engagement, ensuring that we address the diverse needs of children and their families. Through collaborative efforts with educators, parents, and community partners, we strive to create enriching experiences that promote curiosity, resilience, and emotional intelligence.</b></p>
-
-
-
+<main>
+  <section class="card" style="text-align:center;">
+    <img class="profile" src="https://media.gettyimages.com/id/613253596/photo/group-of-happy-gypsy-indian-children-desert-village-india.jpg?s=612x612&w=gi&k=20&c=xcHn3bTaaHWHjfJPVrqwz3Asq3SIyhQD6wFrJCK22zg=" alt="Child">
+    <h2>About the Child</h2>
+    <p>This little warrior is fighting Tetralogy of Fallot, a critical heart condition. Surgery at MGM Health Care, Chennai, will cost ₹4–5 lakhs. Let's help save his life.</p>
   </section>
 
   <section>
-    <h2>Our Stories</h2>
-    <img src="https://www.skcvindia.net/images/mob-banner3.jpg" alt="Children painting"/>
-    
-<h1>The Role of Trust</h1>
-
-
-
-<p><b>Trust is a fundamental component of any relationship, whether personal or communal. It allows individuals to share their stories openly, fostering a sense of belonging and understanding. When we trust others, we are more likely to engage in meaningful conversations, share our vulnerabilities, and connect on a deeper level. This exchange of stories not only strengthens our neural connections but also enriches our emotional landscape.</b></p>
-
-
-
-<h1>The Power of Storytelling</h1>
-
-
-
-<p><b>Storytelling is a powerful tool for communication and connection. It allows us to convey our experiences, beliefs, and values in a way that resonates with others. When we share our stories, we invite others into our world, creating opportunities for empathy and understanding. This exchange can lead to the nurturing of neurons, as shared experiences often result in the formation of new neural pathways.</b></p>
-
-
-
-<h1>Building Trust Through Stories</h1>
-
-
-
-<p><b>To cultivate trust through storytelling, it is essential to be authentic and vulnerable. Sharing our true selves, including our struggles and triumphs, encourages others to do the same. This mutual exchange fosters a safe space where individuals feel valued and understood. As trust deepens, so does the potential for nurturing neurons, leading to stronger connections and a more profound sense of community.
-
-</b></p>
-  </section>
-
-  <section>
-    <h2>vision</h2>
-    <img src="https://www.slideegg.com/image/catalog/40997-vision-and-mission-presentation.png" alt="Founders meeting"/>
-    <p><b>Founded in 2005, Child Trust was born out of a vision to create a world where every child has resources to succeed...
-The early years of a child's life are crucial for brain development. During this period, the brain undergoes rapid growth, forming billions of neurons and establishing connections that will influence a child's emotional and cognitive abilities. Nurturing environments play a significant role in this process, as they provide the necessary stimuli for healthy neural development. This document will discuss how nurturing influences the formation of neurons and the establishment of trust in children.</b></p>
-  </section>
-
-  <section>
-    <h2>Mission</h2>
-
-    <p><b>Our mission is to empower children through education, healthcare, and essential services..
-The Nurtured Neuron Child Trust is committed to making a positive impact on the lives of children and their families. Through our mission, we aim to create a supportive and nurturing environment that empowers children to reach their full potential, ensuring a brighter future for generations to come..</b></p>
-  </section>
-
-  <section>
-    <h2>Core Values</h2>
-    <div class="core-values">
-      <div class="core-value">
-        <img src="https://thumbs.dreamstime.com/b/integrity-ors-beliefs-actions-248190189.jpg" width="100%" height="75%" alt="Integrity concept"/>
-        <h3>Integrity</h3>
-        <p>We act with honesty and accountability in all our endeavors.</p>
-      </div>
-      <div class="core-value">
-        <img src="https://www.aon.com/getmedia/f13513bc-48e4-4511-958f-7bc3b7895579/Inclusion-Strategy-small.aspx" width="100%" height="75%" alt="Inclusive team"/>
-        <h3>Inclusivity</h3>
-        <p>We embrace diversity and ensure everyone has equal opportunities.</p>
-      </div>
-      <div class="core-value">
-        <img src="https://live.staticflickr.com/6165/6166628554_d0b4f9c502.jpg" width="100%" height="75%" alt="Transparent communication"/>
-        <h3>Transparency</h3>
-        <p>We are open and clear in all communications and operations.</p>
-      </div>
-      <div class="core-value">
-        <img src="https://oddfellowsguide.com/wp-content/uploads/2018/03/community-bonding-2.jpg?w=409&h=409" width="100%" height="100%" alt="Community group"/>
-        <h3>Community Engagement</h3>
-        <p>We involve communities in shaping initiatives and programs.</p>
-      </div>
+    <h2>Goal Progress</h2>
+    <div class="progress-bar">
+      <div class="progress">₹3,00,000 / ₹5,00,000</div>
     </div>
   </section>
 
   <section>
-    <h2>Key Focus Areas</h2>
-    <div class="focus-areas">
-      <div class="focus-area">
-        <h3>Educational Literacy</h3>
-        <p>Enhancing access to education and literacy for all children.</p>
-           <button class="btn" onclick="showMessage()">Support Now</button>
+    <h2>Time Left</h2>
+    <p id="countdown" style="font-weight: bold; font-size: 1.2em; color: red;"></p>
+  </section>
 
-      </div>
-      <div class="focus-area">
-        <h3>Health and Family Welfare</h3>
-        <p>Improving healthcare access and family well-being.</p>
-         <button class="btn" onclick="showMessage()">Support Now</button>
-      </div>
-      <div class="focus-area">
-        <h3>Women's Development</h3>
-        <p>Empowering women through education and advocacy.</p>
-          <button class="btn" onclick="showMessage()">Support Now</button>
-      </div>
-      <div class="focus-area">
-        <h3>Urban Development</h3>
-        <p>Supporting safe, sustainable environments in urban areas.</p>
-         <button class="btn" onclick="showMessage()">Support Now</button>
+  <section>
+    <h2>What Our Supporters Say</h2>
+    <blockquote>"Every child deserves a chance. Happy to contribute!" — Priya, Chennai</blockquote>
+    <blockquote>"Such a trustworthy cause. Wishing the child a speedy recovery!" — Raj, Bangalore</blockquote>
+  </section>
 
-      </div>
-      <div class="focus-area">
-        <h3>Poverty Eradication</h3>
-        <p>Addressing root causes of poverty through training and support.</p>
-        <button class="btn" onclick="showMessage()">Support Now</button>
-      </div>
+  <section>
+    <h2>How You Can Help</h2>
+    <p>Scan the QR code or use the UPI ID below to donate:</p>
+    <div class="qr-section" style="text-align:center;">
+      <img src="https://user-images.githubusercontent.com/26814804/66174669-95419a00-e699-11e9-9b3c-0aac91eee822.png" alt="QR Code">
+      <div class="qr-label">Scan to Donate</div>
+      <div class="upi-id">UPI ID: 009994155999@icici</div>
     </div>
   </section>
 
-  <section>
-    <h2>Achievements and Impact</h2>
-    <p>Since inception, Child Trust has helped over 1 million children worldwide, delivering education and healthcare support to transform lives...</p>
+  <section class="social">
+    <h2>Share With Friends</h2>
+    <a href="https://wa.me/?text=Please support this child: [your site link]" target="_blank">WhatsApp</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=[your site link]" target="_blank">Facebook</a>
+    <a href="https://twitter.com/intent/tweet?url=[your site link]&text=Please support this child" target="_blank">Twitter</a>
   </section>
+</main>
 
-  <section>
-    <h2>Get Involved</h2>
-    <p>Join us in making a difference. Whether through volunteering, donating, or sharing our mission, your support helps us grow. <a href="https://www.chatgp.com" class="link">Learn how to get involved!</a></p>
-    <button class="btn" onclick="donate()">donate Now</button>
-  </section>
+<div class="sticky-donate" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});">
+  ❤ Donate Now
+</div>
 
-  <footer>
-    <p>&copy; 2025 Child Trust. All rights reserved. <a href="https://www.chatgp.com" class="link">Visit us here</a></p>
-  </footer>
-
-  <script>
-    function showMessage() {
-      alert("Thank you for your support! Every action helps make a difference.");
-    }
-  </script>
 <script>
-function donate() {
-alert("your little contribution can make very big difference");
-}
+  let currentIndex = 0;
+  function moveSlide(direction) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+    slides.style.transform = translateX(-${currentIndex * 100}%);
+  }
+
+  var deadline = new Date("May 31, 2025 23:59:59").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var t = deadline - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("countdown").innerHTML =
+      days + "d " + hours + "h " + minutes + "m " + seconds + "s left to save a life!";
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "Time's up! Please help urgently!";
+    }
+  }, 1000);
 </script>
 
 </body>
